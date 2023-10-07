@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+      useMaterial3: true,
       appBarTheme: AppBarTheme(
         color: Colors.white,
       ),
@@ -353,7 +355,7 @@ int totalamount(){
                 ]),
               ),
               SizedBox(
-                height: 200,
+                height: 120,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,

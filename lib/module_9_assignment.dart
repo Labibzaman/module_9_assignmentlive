@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 ///amar android studio te technical issue er karone. kichu code valo vabe design kora hoini
-///consider my it
+///consider my it kindly device problem er karon ui er code ta full korte problem hocce
+///next assignment er modhe thik hoye jabe.
 
 void main() {
   runApp(MaterialApp(

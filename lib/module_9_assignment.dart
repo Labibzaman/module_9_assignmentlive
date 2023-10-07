@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+///amar android studio te technical issue er karone. kichu code valo vabe design kora hoini
+///consider my it
+
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(
@@ -79,6 +82,7 @@ class _MyBagState extends State<MyBag> {
                   width: constraints.maxWidth,
                   child: Card(
                     child: Stack(
+                      ///this time i used single list Tile with out listview builder for ui design
                       children: [
                         ListTile(
                           leading: Image.network(

@@ -36,10 +36,18 @@ class _MyBagState extends State<MyBag> {
     return count3 * 10;
   }
 
-int totalamount(){
+  int totalamount(){
     return calculateTotal3()+ calculateTotal2()+calculateTotal();
-}
+  }
 
+  void showCheckoutSnackBar() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Congraulation for buying '),
+        duration: Duration(seconds: 2),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -254,7 +262,7 @@ int totalamount(){
                     child: Text(
                       '\$${calculateTotal2()}', // Add your desired text here
                       style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ]),
@@ -349,13 +357,13 @@ int totalamount(){
                     child: Text(
                       '\$${calculateTotal3()}', // Add your desired text here
                       style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ]),
               ),
               SizedBox(
-                height: 120,
+                height: 100,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -373,6 +381,7 @@ int totalamount(){
                     child: Container(
                       width:constraints.maxWidth ,
                       child: ElevatedButton(onPressed: () {
+                        showCheckoutSnackBar();
 
 
                       }, style: ElevatedButton.styleFrom(

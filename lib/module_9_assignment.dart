@@ -82,7 +82,6 @@ class _MyBagState extends State<MyBag> {
                   width: constraints.maxWidth,
                   child: Card(
                     child: Stack(
-                      ///list view builder use na kore ami aibar stack use korsi. ektu different apporch er karone
                       children: [
                         ListTile(
                           leading: Image.network(
@@ -171,7 +170,7 @@ class _MyBagState extends State<MyBag> {
                           bottom: 10,
                           right: 10,
                           child: Text(
-                            '\$${calculateTotal()}', // Add your desired text here
+                            '\$${calculateTotal()}',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold),
                           ),
@@ -265,7 +264,7 @@ class _MyBagState extends State<MyBag> {
                       bottom: 10,
                       right: 10,
                       child: Text(
-                        '\$${calculateTotal2()}', // Add your desired text here
+                        '\$${calculateTotal2()}',
                         style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),

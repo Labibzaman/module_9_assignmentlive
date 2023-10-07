@@ -82,7 +82,7 @@ class _MyBagState extends State<MyBag> {
                   width: constraints.maxWidth,
                   child: Card(
                     child: Stack(
-                      ///this time i used single list Tile with out listview builder for ui design
+                      ///list view builder use na kore ami aibar stack use korsi. ektu different apporch er karone
                       children: [
                         ListTile(
                           leading: Image.network(
